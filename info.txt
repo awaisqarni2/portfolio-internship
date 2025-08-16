@@ -1,0 +1,18 @@
+//react + tailwind setup Guide
+1. //for Rect setup
+npm create vite@latest portfolio --template react
+cd portfolio
+npm install
+
+2. // for Tailwind setup
+npm install tailwindcss @tailwindcss/vite
+configure the vite plugins:
+    import tailwindcss from '@tailwindcss/vite'
+    export default defineConfig({
+    plugins: [
+        tailwindcss(),
+    ],
+    })
+@import "tailwindcss";  //add this in ./src/index.css
+
+and all done -> npm run dev // run project, now you can add css classes into any compontent of react.
